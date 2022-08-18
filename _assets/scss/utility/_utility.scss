@@ -1,0 +1,21 @@
+@use './foundation/font' as *;
+@use './foundation/color' as *;
+@use './foundation/variable' as *;
+@use './foundation/function' as *;
+@use './foundation/mixin' as *;
+@use './foundation/breakpoints' as *;
+@use 'sass:math';
+
+// pc時非表示
+.u-dn-lg-min {
+  @include mq-sp(lg) {
+    display: none;
+  }
+}
+
+// sp時非表示 {
+.u-dn-lg-max {
+  @include mq-pc(lg) {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+//
+// font
+//
+
+// noto JP
+@mixin notoJp($baseWeight: 500) {
+  font-family: 'noto-sans-cjk-jp', sans-serif;
+  font-style: normal;
+  font-weight: $baseWeight;
+}
+
+// 游ゴシック
+@mixin yuGothic {
+  font-family: '游ゴシック体', 'YuGothic', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic',
+    'メイリオ', sans-serif;
+  font-weight: 500;
+}
+
+// 游ゴシック Bold
+@mixin yuGothicBold {
+  font-family: '游ゴシック体', 'YuGothic', '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  font-weight: bold;
+}

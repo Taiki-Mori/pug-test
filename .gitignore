@@ -1,0 +1,33 @@
+# node_modulesを除外
+_gulp/node_modules/
+_gulp/package-lock.json
+_dist/css/
+_dist/img/
+_dist/js/
+_dist/*.html
+
+*.map
+
+!.gitkeep
+
+# .DS_Store除外
+.DS_Store
+
+# office
+~$*
+
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log file
+*.log

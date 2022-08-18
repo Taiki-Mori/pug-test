@@ -1,0 +1,64 @@
+@use './font' as *;
+@use './color' as *;
+@use './variable' as *;
+@use './function' as *;
+@use './mixin' as *;
+@use './breakpoints' as *;
+@use 'sass:math';
+
+/*------------------------------------------------------------------------------
+  base style
+------------------------------------------------------------------------------*/
+html,
+input,
+textarea,
+select,
+button {
+  @include yuGothic;
+  font-size: 16px;
+}
+
+html {
+  color: $c-black;
+  background: $c-white;
+  font-size: 16px;
+  line-height: $lineHeightMd;
+  word-break: break-all;
+  &.is-noScroll {
+    overflow: hidden;
+  }
+}
+
+img {
+  border: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &.is-hover {
+    transition: $transitionBase;
+    @include hover {
+      &:hover {
+        opacity: $opacity-06;
+      }
+    }
+  }
+}
+
+input,
+textarea,
+select {
+  @include placeholderColor(#ccc);
+}

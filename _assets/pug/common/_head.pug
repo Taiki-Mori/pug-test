@@ -1,0 +1,58 @@
+//- 文字設定
+meta(charset="UTF-8")
+
+//- メディアクエリの動作に必要
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+//- サイトタイトル
+title #{title}
+
+
+//- サイト説明文
+meta(name='description', content=`${description}`)
+
+//- OGP設定
+meta(property="og:title" content=`${title}`)
+meta(property="og:type" content="website")
+meta(property="og:url" content=`${domain}`)
+meta(property='og:locale', content='ja_JP')
+meta(property="og:site_name" content=`${title}`)
+meta(property="og:description" content=`${description}`)
+meta(property="og:image" content=`${ogImage}`)
+
+//- OGP twitter
+meta(name="twitter:card", content="summary_large_image")
+meta(name="twitter:site" content="website")
+meta(name="twitter:domain" content=`${twitterDomain}`)
+meta(name="twitter:title" content=`${title}`)
+meta(name="twitter:description" content=`${description}`)
+meta(name="twitter:image" content=`${ogImage}`)
+
+//- OGP facebook
+meta(property="fb:admins" content=`${facebookAdmins}`)
+meta(property="fb:app_id" content=`${facebookAppId}`)
+
+//- カノニカル設定
+//- link(rel="canonical" href="URL")
+
+//- スマホのホームにショートカットを作成したときのアイコン
+link(rel="apple-touch-icon" href="./apple_touch_icon.png")
+
+//- ファビコン
+link(rel="icon" type="image/x-icon" href="./favicon.ico")
+
+//- Google Fonts
+
+//- Adobe Fonts
+
+//- css
+if location === "top"
+  link(rel="stylesheet", href=cssPath + "index.css")
+else
+  link(rel="stylesheet", href=cssPath + location+".css")
+
+//- script
+if location == 'top'
+  script(src=jsPath + "index.js" defer)
+else
+  script(src=jsPath + location + ".js" defer)

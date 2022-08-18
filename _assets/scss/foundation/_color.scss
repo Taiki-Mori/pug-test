@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+//
+// color
+//
+// 色の名前で変数名を作るときは検索サイトで調べる https://www.colordic.org/search
+
+// placeholder
+$c-placeholder: #c3c3c3;
+
+// main
+$c-base: #f1f1f1;
+$c-main: #333333;
+$c-accent: #f0ba32;
+$c-primary: #1f91be;
+$c-secondary: #d04255;
+
+// main brightness
+// $c-accent-lightest: #***:
+// $c-accent-lighter: #***;
+// $c-accent-light: #***:
+// $c-accent-dark: #***;
+// $c-accent-darker: #***;
+// $c-accent-darkest: #***;
+
+// color name
+$c-white: #fff;
+$c-black: #000;
+
+// color name brightness
+// $c-gray-lightest: #***:
+// $c-gray-lighter: #***;
+// $c-gray-light: #***:
+// $c-gray-dark: #***;
+// $c-gray-darker: #***;
+// $c-gray-darkest: #***;

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@use 'sass:math';
+
+//
+// function
+//
+
+// px -> remに変更
+@function rem($px, $basepx: 16px) {
+  @return math.div($px, $basepx) * 1rem;
+}
+
+// line-height 計算
+@function lhCalc($px, $lineHeight) {
+  @return math.div($lineHeight, $px);
+}
+
+// letter-spacing 計算
+@function lsCalc($px, $letterSpacing) {
+  @return math.div($letterSpacing, $px) * 1em;
+}
+
+// ブラウザ幅に対して変動させる
+@function vwCalc($value, $width) {
+  @return math.div($value, $width) * 100vw;
+}

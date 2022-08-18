@@ -1,0 +1,16 @@
+extend setting/_base
+append value
+  - const title = "トップページのタイトル | Site Name";
+  - const description = "トップページのディスクリプション";
+  - const keywords = "キーワード,キーワード2,キーワード3";
+  - const path = ".";
+  - const location = "top";
+
+block header
+  include common/_header
+
+block main
+  //- 基本的に /project /common /page を呼び出すのみにする
+
+block footer
+  include common/_footer

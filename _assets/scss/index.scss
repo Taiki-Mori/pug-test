@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+// 変数 ・ mixin
+//
+// 色などの変数読み込み
+//
+@use './foundation/font' as *;
+@use './foundation/color' as *;
+@use './foundation/variable' as *;
+@use './foundation/function' as *;
+@use './foundation/mixin' as *;
+@use './foundation/breakpoints' as *;
+
+// reset ・ base
+//
+// ベース系
+//
+@use './foundation/reset';
+@use './foundation/base';
+
+// lib
+//
+// 外部ライブラリ
+//
+// @use './lib/';
+
+// common
+//
+// 共通モジュール
+//
+@use './layout';
+@use './component';
+
+// project
+//
+// 汎用モジュール
+//
+// @use './project/p-mv';
+
+// page
+//
+// TOPページ
+//
+// @use './page/top-mv;
+
+// utility
+//
+// ユーティリティ
+//
+@use './utility/utility';
